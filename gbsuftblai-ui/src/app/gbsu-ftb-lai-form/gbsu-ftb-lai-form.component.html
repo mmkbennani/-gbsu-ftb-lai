@@ -1,0 +1,7 @@
+<div class="container"> 
+   Number to convert : 
+   <p><input type="text" id="numberToSubmit" name="numberToSubmit"  [(ngModel)]="numberToSubmit" /></p>
+   <button type="button" mat-button color="warn" (click)="submitNumber()" [disabled]="!numberToSubmit">Convert</button>
+
+
+</div>

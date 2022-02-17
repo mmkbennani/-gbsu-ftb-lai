@@ -1,0 +1,13 @@
+<div>
+    <div class="container">
+        <h2>Already converted values : </h2>
+    </div>
+    <ul>
+        <li *ngFor="let nbr of listnmbr; let i = index" [attr.data-index]="i" style="margin-top: 20px;">
+            
+            <div style = "background-color: #dff0d8; margin: 0 auto;" >{{nbr.numberToConvert}} and the result is {{nbr.result}}</div>
+        </li>
+    </ul>
+    <app-gbsu-ftb-lai-form (submitNumberOutput)="convertNumber($event)"></app-gbsu-ftb-lai-form>
+    
+</div>
